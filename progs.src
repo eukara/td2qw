@@ -1,0 +1,45 @@
+../qwprogs.dat
+
+defs.qc
+td.qc        // td
+array.qc    // crtd mod
+userdefs.qc // crtd mod
+utils.qc    // crtd mod
+strings.qc  // crtd mod
+elohim.qc   // crtd mod
+observer.qc // crtd mod
+vote.qc     // crtd mod
+match.qc    // crtd mod
+console.qc  // crtd mod
+admin.qc    // crtd mod
+options.qc  // crtd mod
+subs.qc
+hook.qc
+
+sitems.qc    // td
+runegame.qc  // td
+status.qc    // td
+magic.qc     // td
+magicw.qc    // td
+sweapons.qc  // td
+
+fight.qc
+ai.qc
+combat.qc
+items.qc
+
+doors.qc
+
+weapons.qc
+world.qc
+monsters.qc
+client.qc
+misc.qc
+plats.qc
+spectate.qc
+player.qc
+buttons.qc
+triggers.qc
+dog.qc
+wizard.qc
+hknight.qc

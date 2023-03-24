@@ -1,0 +1,43 @@
+quakeworld:
+-carregar o ghost sem o team setado vai falhar da primeira vez, porque o progs vai tentar setar mas NÃO vai ocorrer instantaneamente
+
+-quad fica onde cara morre?
+-multiskin(?)
+-novo programa admin? senha agora é por cfg, motd recompilar?
+-eyecam
+-tirar noexit e colocar outra coisa no options menu, etc
+-testar/consertar ELOHIM_MATCH_MODE, teamplay == 2, teamplay != 0 no código todo (ver o que é exclusivo pra match mode e o que é pra funcionar em teamplay normal, etc)
+ teamplay == 1: no friendly fire
+ temaplay == 2: friendly fire
+-fraglimit só é checado quando em client_frag (ou seja, quando alguém ganha/perde frag - isso afeta frags que as magias ganham pro player? grep em .frags pra ver o que tá mudando diretamente e substituir por client_frag)
+-votação de mapa que teve sucesso não vai pra tela de rankings? agora vai? ver se funcionou
+-tecla 0 = yes na votação (DOCUMENTAR NO MANUAL!)
+-aliases trashrune, trashsw, swep: documentar
+-documentar samelevel & 1? funciona?
+-chagneweapon não funcionou? fteqw rodando mod qn, conectando com ezquake - era coisa de cfg?
+-autokick consertar
+-stats do elohim usar coisas do td
+-timer como centerprint?
+-consolidar forced respawn do td2 (10 ou 20 segundos, não lembro) + forced respawn do cr (5 segundos)
+-ir pra tela de rankings quando a partida termina?
+-ver se tudo que o td cria é classname "td_temp", o match_reset() só procura por isso
+-dog teleportou e sumiu, no teleporte da start no hub que vai pros 4 episódios
+-poder atirar estando ready atrapalha quando termina a partida, ficam achando que não acabou
+-scr_centertime: o elohim mexe? voltou ao padrão por um momento, não sei o que aconteceu
+-o que acontece se o cara tentar virar observer no meio da partida (ou seja, aparecer um prompt yes/no) e outro player iniciar uma votação? não dá pra iniciar votação com a partida começada? todos têm que virar observer antes?
+-ver outras coisas que o observer não deve interagir mas que não checam pelo classname "player"
+-tesla teammate?
+-ao dar ready, permite troca pro machado
+-dead body sliding
+-votação de timelimit: não detecta o número (testei 5) (testar os outros pra ver se não dá erro também! mapas sei que tá funcionando)
+-time branco created
+-kill nao funciona quando ta ready
+-tesla + mirror = não nasce de novo
+-impulse 162 e alias e2m4 vazio?
+-quando joga fora a runa do turbo, dá o som de saindo da água após um afogamento (é bug do td2?)
+-certa vez na dm6 sumiram: runa da armadura, chaingun, morteiro
+-elohim_commands: @@@@ no logout
+-utils_do_items: colocar coisas do td2?
+
+TESTAR SE CONSERTEI:
+-hook ao morrer
