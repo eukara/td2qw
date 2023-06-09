@@ -228,6 +228,7 @@ void() zulu_keytouch =
 
 void() worldspawn =
 {
+	Mapcycle_Init();
 
         cvar_set ("deathmatch", "1");
         cvar_set ("teamplay", "0");

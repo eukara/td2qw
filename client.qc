@@ -275,27 +275,7 @@ void() GotoNextMap =
 		changelevel (mapname);
 	else
 	{
-                local string newmap;
-                // configurable map lists, see if the current map exists as a
-                // serverinfo/localinfo var
-                newmap = infokey(world, mapname);
-                if (newmap != "")
-                        changelevel (newmap);
-                else
-		// ELOHIM_MOD - check for start0/start1
-		if (nextmap == "start0")
-		{
-			serverflags = 0;
-			changelevel("start");
-		}
-		else if (nextmap == "start1")
-		{
-			serverflags = 15;
-			changelevel("start");
-		}
-		else
-			changelevel (nextmap);
-		// END_MOD
+		localcmd("nextmap\n"); 
 	}
 };
 
